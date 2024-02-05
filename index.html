@@ -12,9 +12,11 @@
 <body class="overflow-x-hidden bg-gray-200">
     <header>
         <nav class="h-[70px] w-screen flex justify-between p-[20px]">
-            <div class="flex">
-                <a class="hover:opacity-35" href=""><i class="min-[960px]:hidden fa-solid fa-bars text-xxl text-black pr-[15px]"></i></a> 
-                <a class="hover:opacity-35" href=""><img class="h-[15px] w-[70px] mr-[20px] mt-[5px]" src="assets/logo.jpg" alt="logo-dribble"></a> 
+            <div class="flex justify-center items-center">
+                <a class="hover:opacity-35" href=""><i
+                        class="min-[960px]:hidden fa-solid fa-bars text-xxl text-black pr-[15px]"></i></a>
+                <a class="hover:opacity-35" href=""><img class="h-[15px] w-[70px] mr-[20px] mt-[5px]"
+                        src="assets/logo.jpg" alt="logo-dribble"></a>
             </div>
             <div class="hidden min-[950px]:flex">
                 <ul class="font-bold flex justify-center items-center">
@@ -25,24 +27,111 @@
                     <li><a href=""><span>Diventa professionista</span></a></li>
                 </ul>
             </div>
-            <div class="flex">
-                <form class="flex justify-end ">
+            <div class="flex justify-center">
+                <form class="flex justify-end">
                     <a href=""><img class="h-[17px] w-[17px] mt-[8px] mr-[10px]"
                             src="https://cdn.icon-icons.com/icons2/1129/PNG/512/searchmagnifierinterfacesymbol1_79893.png"
                             alt="immagine-lente-ricerca"></a>
-                    <input class="hidden md:flex w-[100%] h-[100%] ml-[15px] mr-[10px]" type="text" placeholder="Ricerca">
+                    <input class="hidden md:flex w-[100%] h-[100%] ml-[15px] mr-[10px]" type="text"
+                        placeholder="Ricerca">
                 </form>
                 <div class=" bg-black rounded-[20px] text-white text-center w-[100px]">
-                    <a class="" href="">Login</a>
+                    <a href="">Login</a>
                 </div>
             </div>
         </nav>
     </header>
     <main>
         <!--HOME-CONTAINER-->
-        <div class="mt-[30px] flex justify-center">
-            <div class="p-[10px] bg-yellow-300 w-[300px] rounded-[20px] flex justify-center">
-                <a href="">Oltre 3 milioni di creativi pronti all'uso</a>
+        <div class="w-screen ">
+            <div class="mt-[30px] flex justify-center">
+                <div class="p-[10px] bg-yellow-300 w-[300px] rounded-[20px] flex justify-center">
+                    <a href="">Oltre 3 milioni di creativi pronti all'uso</a>
+                </div>
+            </div>
+            <div class="flex justify-center m-[45px]">
+                <h1 class="text-5xl text-center font-serif">La <br> destinazione mondiale del design</h1>
+            </div>
+            <div class="flex justify-center m-[30px]">
+                <p class="text-center">Lasciati ispirare dal lavoro di milioni di <br> designer e agenzie di alto
+                    livello in tutto il <br> mondo</p>
+            </div>
+            <div class="flex justify-center">
+                <div class="inline-block p-[12px] pr-[20px] pl-[20px] bg-black rounded-[20px] mt-[17px]">
+                    <a class="text-white" href="">Iniziare</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-center mt-[20px]">
+            <div
+                class="bg-cover bg-no-repeat bg-center bg-[url('/assets/assets-scroll/foto2.jpg')] w-[180px] h-[300px] flex justify-center rounded-[30px] mr-[10px]">
+                <div class="flex justify-center items-end">
+                    <div class="mb-[20px] ml-[10px] block">
+                        <h2 class="text-white ">Maria Rossi</h2>
+                        <p class="text-white">Direttore creativo</p>
+                        <div class="mt-[10px]">
+                            <h3 class="inline-block text-white p-[6px] border-[1px] border-white rounded-[20px]">
+                                Mobile</h3>
+                            <h3 class="inline-block text-white p-[6px] border-[1px] border-white rounded-[20px]">
+                                Mobile</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="bg-cover bg-no-repeat bg-center bg-[url('/assets/assets-scroll/foto2.jpg')] w-[180px] h-[300px] flex rounded-[30px] mr-[10px]">
+                <div class="flex  items-end">
+                    <div class="mb-[20px] ml-[10px] block">
+                        <h2 class="text-white ">Maria Rossi</h2>
+                        <p class="text-white">Direttore creativo</p>
+                        <div class="mt-[10px]">
+                            <h3 class="inline-block text-white p-[6px] border-[1px] border-white rounded-[20px]">
+                                Mobile</h3>
+                            <h3 class="inline-block text-white p-[6px] border-[1px] border-white rounded-[20px]">
+                                Mobile</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--LISTA OL-->
+        <div class="mt-[60px]">
+            <h2 class="text-center text-3xl ">Esplora design stimolanti</h2>
+            <div class="flex justify-center">
+                <ol class="m-[25px] min-[950px]:grid grid-rows-3 grid-cols-3">
+                    
+                    <div class=" mb-[20px] mr-[20px]">
+                        <a href="">
+                            <li><img class="w-[400px] rounded-[20px]" src="assets/img-1.jpg" alt="immagine-1"></li>
+                        </a>
+                        <div class="flex">
+                            <img class="h-[25px] mr-[5px]" src="assets/assets-svg/icons8-logo.svg" alt="svg-1">
+                        <p class="mr-[5px]">Pippo Calippo</p>
+                        <img class="h-[25px]" src="assets/assets-svg/icons8-pro-64.png" alt="immagine-2">
+                        </div>
+                        
+                    </div>
+                    <a href="">
+                        <li><img class="w-[400px] mb-[100px]" src="assets/img-2.jpg" alt="immagine-2"></li>
+                    </a>
+                    <a href="">
+                        <li><img class="w-[400px] mb-[100px]" src="assets/img-3.jpg" alt="immagine-3"></li>
+                    </a>
+                    <a href="">
+                        <li><img class="w-[400px] mb-[100px]" src="assets/img-4.jpg" alt="immagine-4"></li>
+                    </a>
+                    <a href="">
+                        <li><img class="w-[400px] mb-[100px]" src="assets/img-5.jpg" alt="immagine-5"></li>
+                    </a>
+                    <a href="">
+                        <li><img class="w-[400px] mb-[100px]" src="assets/img-6.jpg" alt="immagine-6"></li>
+                    </a>
+                    <a href="">
+                        <li><img class="w-[400px] mb-[100px]" src="assets/img-7.jpg" alt="immagine-7"></li>
+                    </a>
+                    <a href=""><li><img class="w-[400px] mb-[100px]" src="assets/img-8.jpg" alt="immagine-8"></li></a>
+                </ol>
             </div>
         </div>
     </main>
