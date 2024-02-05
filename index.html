@@ -9,12 +9,12 @@
     <title>Dribbble</title>
 </head>
 
-<body class="overflow-hidden">
+<body class="overflow-x-hidden bg-gray-200">
     <header>
-        <nav class="h-[70px] w-[100vw] flex justify-between p-[20px]">
+        <nav class="h-[70px] w-screen flex justify-between p-[20px]">
             <div class="flex">
-                <i class="fa-solid fa-bars text-xxl text-black pr-[15px]"></i>
-                <img class="h-[15px] w-[70px]" src="assets/logo.jpg" alt="logo-dribble">
+                <a class="hover:opacity-35" href=""><i class="min-[960px]:hidden fa-solid fa-bars text-xxl text-black pr-[15px]"></i></a> 
+                <a class="hover:opacity-35" href=""><img class="h-[15px] w-[70px] mr-[20px] mt-[5px]" src="assets/logo.jpg" alt="logo-dribble"></a> 
             </div>
             <div class="hidden min-[950px]:flex">
                 <ul class="font-bold flex justify-center items-center">
@@ -26,18 +26,26 @@
                 </ul>
             </div>
             <div class="flex">
-                <div class="w-[70px] flex justify-center">
-                    <img class="h-[20px]"
-                        src="https://cdn.icon-icons.com/icons2/1129/PNG/512/searchmagnifierinterfacesymbol1_79893.png"
-                        alt="immagine-lente-ricerca">
-                </div>
+                <form class="flex justify-end ">
+                    <a href=""><img class="h-[17px] w-[17px] mt-[8px] mr-[10px]"
+                            src="https://cdn.icon-icons.com/icons2/1129/PNG/512/searchmagnifierinterfacesymbol1_79893.png"
+                            alt="immagine-lente-ricerca"></a>
+                    <input class="hidden md:flex w-[100%] h-[100%] ml-[15px] mr-[10px]" type="text" placeholder="Ricerca">
+                </form>
                 <div class=" bg-black rounded-[20px] text-white text-center w-[100px]">
                     <a class="" href="">Login</a>
                 </div>
             </div>
-            
         </nav>
     </header>
+    <main>
+        <!--HOME-CONTAINER-->
+        <div class="mt-[30px] flex justify-center">
+            <div class="p-[10px] bg-yellow-300 w-[300px] rounded-[20px] flex justify-center">
+                <a href="">Oltre 3 milioni di creativi pronti all'uso</a>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>
