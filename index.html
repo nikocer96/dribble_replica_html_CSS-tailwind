@@ -9,22 +9,22 @@
     <title>Dribbble</title>
 </head>
 
-<body class="overflow-x-hidden bg-gray-200">
+<body class="overflow-x-hidden bg-[#fff]">
     <header>
         <nav class="h-[70px] w-screen flex justify-between p-[20px]">
             <div class="flex justify-center items-center">
                 <a class="hover:opacity-35" href=""><i
                         class="min-[960px]:hidden fa-solid fa-bars text-xxl text-black pr-[15px]"></i></a>
-                <a class="hover:opacity-35" href=""><img class="h-[15px] w-[70px] mr-[20px] mt-[5px]"
+                <a class="hover:opacity-35" href=""><img class="h-[15px] w-[70px] mr-[30px] mt-[5px]"
                         src="assets/logo.jpg" alt="logo-dribble"></a>
             </div>
             <div class="hidden min-[950px]:flex">
-                <ul class="font-bold flex justify-center items-center">
-                    <li class="pr-[10px]"><a href=""><span>Trova talento</span></a></li>
-                    <li class="pr-[10px]"><a href=""><span>Ispirazione</span></a></li>
-                    <li class="pr-[10px]"><a href=""><span>Impara il design</span></a></li>
-                    <li class="pr-[10px]"><a href=""><span>Lavori</span></a></li>
-                    <li><a href=""><span>Diventa professionista</span></a></li>
+                <ul class="font-semibold flex justify-center items-center">
+                    <li class="mr-[15px]"><a href=""><span>Trova talento</span></a></li>
+                    <li class="mr-[15px]"><a href=""><span>Ispirazione</span></a></li>
+                    <li class="mr-[15px]"><a href=""><span>Impara il design</span></a></li>
+                    <li class="mr-[15px]"><a href=""><span>Lavori</span></a></li>
+                    <li class="mr-[15px]"><a href=""><span>Diventa professionista</span></a></li>
                 </ul>
             </div>
             <div class="flex justify-center">
@@ -32,11 +32,12 @@
                     <a href=""><img class="h-[17px] w-[17px] mt-[8px] mr-[10px]"
                             src="https://cdn.icon-icons.com/icons2/1129/PNG/512/searchmagnifierinterfacesymbol1_79893.png"
                             alt="immagine-lente-ricerca"></a>
-                    <input class="hidden md:flex w-[100%] h-[100%] ml-[15px] mr-[10px]" type="text"
+                    <input class="hidden min-[1095px]:flex w-[100%] h-[100%] ml-[15px] mr-[10px] rounded-[20px]" type="text"
                         placeholder="Ricerca">
+                    <a class="hidden min-[950px]:flex ml-[10px] mr-[10px] font-semibold" href="">Login</a>
                 </form>
                 <div class=" bg-black rounded-[20px] text-white text-center w-[100px]">
-                    <a href="">Login</a>
+                    <a href="">Iscrizione</a>
                 </div>
             </div>
         </nav>
@@ -45,7 +46,7 @@
         <!--HOME-CONTAINER-->
         <div class="w-screen ">
             <div class="mt-[30px] flex justify-center">
-                <div class="p-[10px] bg-yellow-300 w-[300px] rounded-[20px] flex justify-center">
+                <div class="p-[10px] bg-yellow-300 w-[300px] rounded-[20px] flex justify-center transition-colors">
                     <a href="">Oltre 3 milioni di creativi pronti all'uso</a>
                 </div>
             </div>
@@ -97,41 +98,240 @@
         </div>
         <!--LISTA OL-->
         <div class="mt-[60px]">
-            <h2 class="text-center text-3xl ">Esplora design stimolanti</h2>
-            <div class="flex justify-center">
-                <ol class="m-[25px] min-[950px]:grid grid-rows-3 grid-cols-3">
-                    
-                    <div class=" mb-[20px] mr-[20px]">
+            <h2 class="mb-[30px] text-center text-3xl ">Esplora design stimolanti</h2>
+            <div class="flex justify-center mr-[40px] ml-[30px]">
+                <ol class="ml-[20px] min-[950px]:grid grid-rows-3 grid-cols-3 gap-[40px]">
+
+                    <div class="mb-[20px]">
                         <a href="">
-                            <li><img class="w-[400px] rounded-[20px]" src="assets/img-1.jpg" alt="immagine-1"></li>
+                            <li><img class="w-[400px] rounded-[30px]" src="assets/img-1.jpg" alt="immagine-1"></li>
                         </a>
-                        <div class="flex">
-                            <img class="h-[25px] mr-[5px]" src="assets/assets-svg/icons8-logo.svg" alt="svg-1">
-                        <p class="mr-[5px]">Pippo Calippo</p>
-                        <img class="h-[25px]" src="assets/assets-svg/icons8-pro-64.png" alt="immagine-2">
+                        <div class="flex mt-[10px] justify-between">
+                            <div class="flex">
+                                <img class="h-[25px] mr-[5px]" src="assets/assets-svg/icons8-logo.svg" alt="svg-1">
+                                <p class="mr-[5px]">Pippo Calippo</p>
+                                <div
+                                    class="bg-[#ccc] w-[40px] h-[20px] flex justify-center items-center mt-[4px] rounded-[5px] hover:bg-black">
+                                    <a class="font-extrabold text-white text-[12px]" href=""><span>PRO</span></a>
+                                </div>
+                            </div>
+                            <div class="flex mr-[10px]">
+                                <a href=""><i
+                                        class="fa-regular fa-heart opacity-15 hover:opacity-100 mr-[10px]"></i></a>
+                                <i class="fa-regular fa-eye mr-[10px] mt-[5px]"></i>
+                                <p>48,3k</p>
+                            </div>
                         </div>
-                        
+
                     </div>
-                    <a href="">
-                        <li><img class="w-[400px] mb-[100px]" src="assets/img-2.jpg" alt="immagine-2"></li>
-                    </a>
-                    <a href="">
-                        <li><img class="w-[400px] mb-[100px]" src="assets/img-3.jpg" alt="immagine-3"></li>
-                    </a>
-                    <a href="">
-                        <li><img class="w-[400px] mb-[100px]" src="assets/img-4.jpg" alt="immagine-4"></li>
-                    </a>
-                    <a href="">
-                        <li><img class="w-[400px] mb-[100px]" src="assets/img-5.jpg" alt="immagine-5"></li>
-                    </a>
-                    <a href="">
-                        <li><img class="w-[400px] mb-[100px]" src="assets/img-6.jpg" alt="immagine-6"></li>
-                    </a>
-                    <a href="">
-                        <li><img class="w-[400px] mb-[100px]" src="assets/img-7.jpg" alt="immagine-7"></li>
-                    </a>
-                    <a href=""><li><img class="w-[400px] mb-[100px]" src="assets/img-8.jpg" alt="immagine-8"></li></a>
+                    <div class="mb-[20px]">
+                        <a href="">
+                            <li><img class="w-[400px] rounded-[30px]" src="assets/img-2.jpg" alt="immagine-2"></li>
+                        </a>
+                        <div class="flex mt-[10px] justify-between">
+                            <div class="flex">
+                                <img class="h-[25px] mr-[5px]" src="assets/assets-svg/icons8-logo.svg" alt="svg-1">
+                                <p class="mr-[5px]">Pippo Calippo</p>
+                                <div
+                                    class="bg-[#ccc] w-[40px] h-[20px] flex justify-center items-center mt-[4px] rounded-[5px] hover:bg-black">
+                                    <a class="font-extrabold text-white text-[12px]" href=""><span>PRO</span></a>
+                                </div>
+                            </div>
+                            <div class="flex mr-[10px]">
+                                <a href=""><i
+                                        class="fa-regular fa-heart opacity-15 hover:opacity-100 mr-[10px]"></i></a>
+                                <i class="fa-regular fa-eye mr-[10px] mt-[5px]"></i>
+                                <p>48,3k</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="mb-[20px]">
+                        <a href="">
+                            <li><img class="w-[400px] rounded-[30px]" src="assets/img-3.jpg" alt="immagine-3"></li>
+                        </a>
+                        <div class="flex mt-[10px] justify-between">
+                            <div class="flex">
+                                <img class="h-[25px] mr-[5px]" src="assets/assets-svg/icons8-logo.svg" alt="svg-1">
+                                <p class="mr-[5px]">Pippo Calippo</p>
+                                <div
+                                    class="bg-[#ccc] w-[40px] h-[20px] flex justify-center items-center mt-[4px] rounded-[5px] hover:bg-black">
+                                    <a class="font-extrabold text-white text-[12px]" href=""><span>PRO</span></a>
+                                </div>
+                            </div>
+                            <div class="flex mr-[10px]">
+                                <a href=""><i
+                                        class="fa-regular fa-heart opacity-15 hover:opacity-100 mr-[10px]"></i></a>
+                                <i class="fa-regular fa-eye mr-[10px] mt-[5px]"></i>
+                                <p>48,3k</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="mb-[20px]">
+                        <a href="">
+                            <li><img class="w-[400px] rounded-[30px]" src="assets/img-4.jpg" alt="immagine-4"></li>
+                        </a>
+                        <div class="flex mt-[10px] justify-between">
+                            <div class="flex">
+                                <img class="h-[25px] mr-[5px]" src="assets/assets-svg/icons8-logo.svg" alt="svg-1">
+                                <p class="mr-[5px]">Pippo Calippo</p>
+                                <div
+                                    class="bg-[#ccc] w-[40px] h-[20px] flex justify-center items-center mt-[4px] rounded-[5px] hover:bg-black">
+                                    <a class="font-extrabold text-white text-[12px]" href=""><span>PRO</span></a>
+                                </div>
+                            </div>
+                            <div class="flex mr-[10px]">
+                                <a href=""><i
+                                        class="fa-regular fa-heart opacity-15 hover:opacity-100 mr-[10px]"></i></a>
+                                <i class="fa-regular fa-eye mr-[10px] mt-[5px]"></i>
+                                <p>48,3k</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="mb-[20px]">
+                        <a href="">
+                            <li><img class="w-[400px] rounded-[30px]" src="assets/img-5.jpg" alt="immagine-5"></li>
+                        </a>
+                        <div class="flex mt-[10px] justify-between">
+                            <div class="flex">
+                                <img class="h-[25px] mr-[5px]" src="assets/assets-svg/icons8-logo.svg" alt="svg-1">
+                                <p class="mr-[5px]">Pippo Calippo</p>
+                                <div
+                                    class="bg-[#ccc] w-[40px] h-[20px] flex justify-center items-center mt-[4px] rounded-[5px] hover:bg-black">
+                                    <a class="font-extrabold text-white text-[12px]" href=""><span>PRO</span></a>
+                                </div>
+                            </div>
+                            <div class="flex mr-[10px]">
+                                <a href=""><i
+                                        class="fa-regular fa-heart opacity-15 hover:opacity-100 mr-[10px]"></i></a>
+                                <i class="fa-regular fa-eye mr-[10px] mt-[5px]"></i>
+                                <p>48,3k</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="mb-[20px]">
+                        <a href="">
+                            <li><img class="w-[400px] rounded-[30px]" src="assets/img-6.jpg" alt="immagine-6"></li>
+                        </a>
+                        <div class="flex mt-[10px] justify-between">
+                            <div class="flex">
+                                <img class="h-[25px] mr-[5px]" src="assets/assets-svg/icons8-logo.svg" alt="svg-1">
+                                <p class="mr-[5px]">Pippo Calippo</p>
+                                <div
+                                    class="bg-[#ccc] w-[40px] h-[20px] flex justify-center items-center mt-[4px] rounded-[5px] hover:bg-black">
+                                    <a class="font-extrabold text-white text-[12px]" href=""><span>PRO</span></a>
+                                </div>
+                            </div>
+                            <div class="flex mr-[10px]">
+                                <a href=""><i
+                                        class="fa-regular fa-heart opacity-15 hover:opacity-100 mr-[10px]"></i></a>
+                                <i class="fa-regular fa-eye mr-[10px] mt-[5px]"></i>
+                                <p>48,3k</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="mb-[20px]">
+                        <a href="">
+                            <li><img class="w-[400px] rounded-[30px]" src="assets/img-7.jpg" alt="immagine-7"></li>
+                        </a>
+                        <div class="flex mt-[10px] justify-between">
+                            <div class="flex">
+                                <img class="h-[25px] mr-[5px]" src="assets/assets-svg/icons8-logo.svg" alt="svg-1">
+                                <p class="mr-[5px]">Pippo Calippo</p>
+                                <div
+                                    class="bg-[#ccc] w-[40px] h-[20px] flex justify-center items-center mt-[4px] rounded-[5px] hover:bg-black">
+                                    <a class="font-extrabold text-white text-[12px]" href=""><span>PRO</span></a>
+                                </div>
+                            </div>
+                            <div class="flex mr-[10px]">
+                                <a href=""><i
+                                        class="fa-regular fa-heart opacity-15 hover:opacity-100 mr-[10px]"></i></a>
+                                <i class="fa-regular fa-eye mr-[10px] mt-[5px]"></i>
+                                <p>48,3k</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="mb-[20px]">
+                        <a href="">
+                            <li><img class="w-[400px] rounded-[30px]" src="assets/img-8.jpg" alt="immagine-8"></li>
+                        </a>
+                        <div class="flex mt-[10px] justify-between">
+                            <div class="flex">
+                                <img class="h-[25px] mr-[5px]" src="assets/assets-svg/icons8-logo.svg" alt="svg-1">
+                                <p class="mr-[5px]">Pippo Calippo</p>
+                                <div
+                                    class="bg-[#ccc] w-[40px] h-[20px] flex justify-center items-center mt-[4px] rounded-[5px] hover:bg-black">
+                                    <a class="font-extrabold text-white text-[12px]" href=""><span>PRO</span></a>
+                                </div>
+                            </div>
+                            <div class="flex mr-[10px]">
+                                <a href=""><i
+                                        class="fa-regular fa-heart opacity-15 hover:opacity-100 mr-[10px]"></i></a>
+                                <i class="fa-regular fa-eye mr-[10px] mt-[5px]"></i>
+                                <p>48,3k</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="mb-[20px]">
+                        <a href="">
+                            <li><img class="w-[400px] rounded-[30px]" src="assets/img-9.jpg" alt="immagine-9"></li>
+                        </a>
+                        <div class="flex mt-[10px] justify-between">
+                            <div class="flex">
+                                <img class="h-[25px] mr-[5px]" src="assets/assets-svg/icons8-logo.svg" alt="svg-1">
+                                <p class="mr-[5px]">Pippo Calippo</p>
+                                <div
+                                    class="bg-[#ccc] w-[40px] h-[20px] flex justify-center items-center mt-[4px] rounded-[5px] hover:bg-black">
+                                    <a class="font-extrabold text-white text-[12px]" href=""><span>PRO</span></a>
+                                </div>
+                            </div>
+                            <div class="flex mr-[10px]">
+                                <a href=""><i
+                                        class="fa-regular fa-heart opacity-15 hover:opacity-100 mr-[10px]"></i></a>
+                                <i class="fa-regular fa-eye mr-[10px] mt-[5px]"></i>
+                                <p>48,3k</p>
+                            </div>
+                        </div>
+
+                    </div>
                 </ol>
+            </div>
+        </div>
+        <div class="flex justify-center mb-[150px] mt-[20px]">
+            <div class="inline-block border-[2px] border-black p-[24px] rounded-[40px]">
+                <p>Trova più ispirazione</p>
+            </div>
+        </div>
+        <!--FOOTER-CTA-->
+        <div class="w-screen h-[630px] bg-[#ffda79] p-[25px]">
+            <div>
+                <p class="text-center text-[40px] mt-[50px] font-medium font-serif min-[765px]:text-[70px]">Trova il tuo prossimo <span class="min-[765px]:flex flex-col">designer oggi stesso</span></p>
+            </div>
+            <div class="flex justify-center">
+                <div class="max-w-[400px]">
+                    <p class="text-center text-[18px] mt-[30px] mb-[40px] font-normal">I marchi leader a livello mondiale utilizzano Dribbble per assumere talenti creativi.
+                        Sfoglia milioni di portfolio di prim'ordine per trovare il tuo abbinamento creativo perfetto.
+        
+                    </p>
+                </div>
+            </div>
+            
+            <div class="flex flex-col justify-cente items-centerr min-[400px]:flex-row justify-center mb-[40px]">
+                <div class="flex justify-center bg-black rounded-[25px] p-[5px] mr-[8px] min-[420px]:p-[11px]">
+                    <a class="text-white " href="">Inizia ora</a>
+                </div>
+                <div class="flex justify-center bg-white rounded-[25px] p-[5px] min-[420px]:p-[11px]">
+                    <a href="">Ulteriori informazioni sulle assunzioni</a>
+                </div>
+            </div>
+            <div>
+                <p class="text-center">Sei un designer? <a class="underline decoration-2" href="">Unisciti a Dribble</a></p>
             </div>
         </div>
     </main>
