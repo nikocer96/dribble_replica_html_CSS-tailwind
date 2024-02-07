@@ -1,0 +1,21 @@
+@keyframes animazionColor {
+    0% {
+        background-color: #FFD700; /* Colore iniziale (giallo) */
+    }
+    25% {
+        background-color: yellowgreen; /* Colore al 25% dell'animazione */
+    }
+    50% {
+        background-color: yellow; /* Colore al 50% dell'animazione */
+    }
+    75% {
+        background-color: pink; /* Colore al 75% dell'animazione */
+    }
+    100% {
+        background-color: orange; /* Colore finale (tornando al giallo) */
+    }
+}
+
+.animate-animazionColor {
+    animation: animazionColor 15s infinite;
+}
